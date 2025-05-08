@@ -16,6 +16,6 @@ En webbapplikation för att hantera arbetslivserfarenhetter med REST API och Mon
 
 ## Installation
 
-1. Klona repot: `git clone [repo-url]`
-2. Installera beroenden: `npm install`
-3. Starta utvecklingsserver: `npm start`
+
+1. Installera beroenden:"npm install"
+2. Starta utvecklingsserver: "npm start"
