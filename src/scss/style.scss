@@ -1,0 +1,182 @@
+// ------------------
+// 🎨 المتغيرات
+// ------------------
+$primary-color: #35424a;
+$secondary-color: #e8491d;
+$light-color: #f4f4f4;
+$dark-color: #333;
+$error-color: #fc2209;
+$success-color: #2ecc71;
+$delete-color: #e74c3c;
+$delete-hover: #98706b;
+$font-stack: 'Arial', sans-serif;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+body {
+  font-family: $font-stack;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: $dark-color;
+  background-color: $light-color;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: $primary-color;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+nav {
+  margin-top: 1rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: adjust-color($primary-color, $lightness: 10%);
+      text-decoration: underline;
+    }
+  }
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.about-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  h2, h3 {
+    color: $primary-color;
+    border-bottom: 2px solid $secondary-color;
+    padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+.feature-list,
+.tech-list,
+.tools-list,
+.conclusions ul {
+  padding-left: 1.5rem;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.tech-list {
+  ul {
+    padding-left: 1rem;
+    list-style-type: circle;
+  }
+}
+
+
+.experience-card {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  h3 {
+    margin-top: 0;
+    color: $primary-color;
+  }
+}
+
+.delete-btn {
+  background: $delete-color;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background: $delete-hover;
+  }
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+}
+
+button[type="submit"] {
+  background: $success-color;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background: lighten($success-color, 20%);
+  }
+}
+
+
+.error {
+  background: $error-color;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+
+footer {
+  background: $primary-color;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+  position: relative;
+}

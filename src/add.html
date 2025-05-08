@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lägg till ny erfarenhet</title>
+  <link rel="stylesheet" href="./scss/style.scss">
+</head>
+<body>
+  <header>
+    <h1>Lägg till ny arbetslivserfarenhet</h1>
+    <nav>
+      <a href="index.html">Startsida</a>
+      <a href="add.html">Lägg till erfarenhet</a>
+      <a href="about.html">Om webbplatsen</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="experience-form">
+      <div class="form-group">
+        <label for="company">Företagsnamn:</label>
+        <input type="text" id="company" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="role">Jobbtitel:</label>
+        <input type="text" id="role" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="duration">Arbetsperiod:</label>
+        <input type="text" id="duration" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="description">Jobbeskrivning:</label>
+        <textarea id="description" required></textarea>
+      </div>
+      
+      <button type="submit">Spara</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>hanan</p>
+  </footer>
+
+  <script type="module" src="js/add.js"></script>
+</body>
+</html>
