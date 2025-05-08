@@ -10,9 +10,9 @@ En webbapplikation för att hantera arbetslivserfarenhetter med REST API och Mon
 
 ## API Endpoints
 
-- `GET /api/experiences` - Hämta alla erfarenheter
-- `POST /api/experiences` - Lägg till ny erfarenhet
-- `DELETE /api/experiences/:id` - Ta bort erfarenhet
+- "GET /api/experiences" - Hämta alla erfarenheter
+- "POST /api/experiences "- Lägg till ny erfarenhet
+  "DELETE /api/experiences/:id" - Ta bort erfarenhet
 
 ## Installation
 
