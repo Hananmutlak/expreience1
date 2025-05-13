@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:5000/api/experiences';
+const API_BASE_URL = 'https://experience-cd35.onrender.com/api/experiences';
 
 // جلب جميع الخبرات
 export async function getAllExperiences() {
